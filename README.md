@@ -11,6 +11,7 @@ flowchart TD
     I -- Yes --> J{Too High}
     I -- No --> K{Is the Random Number greater then the User Guess}
     K -- Yes --> L{Too Low}
-    J & L --> C
-    H --> M[End]
+    J & L --> M[Guess Again]
+    M --> C
+    H --> N[End]
 ```
