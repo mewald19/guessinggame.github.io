@@ -6,7 +6,7 @@ flowchart TD
     E -->|Yes| C
     E -->|No| F{Is it a Number}
     F --> G{Is the Random Number equal to the User Guess}
-    G -->|Yes| --> H{Correct}
+    G -->|Yes| -->  H{Correct}
     G -->|No| --> I{Is the Random Number less then the User Guess}
     I -->|Yes| --> J{Too High}
     I -->|No| --> K{Is the Random Number greater then the User Guess}
