@@ -4,6 +4,7 @@
 flowchart TD
     A[Start] --> B{Random Number Generator} --> C{User entered number guess} -->D{User Input Validation} --> E{Is it Text}
     E -- Yes --> O{Please use a number for your guess}
+    O --> C
     E -- No --> F{Is it a Number}
     F --> G{Is the Random Number equal to the User Guess}
     G -- Yes -->  H{Correct}
